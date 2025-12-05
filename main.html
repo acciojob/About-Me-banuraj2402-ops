@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile </title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .skill-bar-bg {
+            background-color: #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-background min-h-screen p-4 md:p-8">
 
+    <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+        
+        <header class="p-8 bg-primary text-white flex flex-col md:flex-row items-center justify-between rounded-t-xl">
+            <div class="flex items-center space-x-6">
+                <img 
+                    src="https://placehold.co/120x120/4f46e5/ffffff?text=B" 
+                    alt="Profile photo of the user." 
+                    class="w-24 h-24 rounded-full border-4 border-white object-cover shadow-lg"
+                    onerror="this.onerror=null; this.src='https://placehold.co/120x120/4f46e5/ffffff?text=Profile';"
+                />
+                <div>
+                    <h1 class="text-4xl font-extrabold" id="name-heading">Banu</h1>
+                    <p class="text-xl font-medium text-indigo-200" id="profile-heading">Computer Teacher</p>
+                </div>
+            </div>
+            <div class="mt-4 md:mt-0 md:text-right">
+                
+                <p class="text-xl font-bold" id="email-heading">banuraj2402@gmail.com</p>
+            </div>
+        </header>
+
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
+            
+            <section class="md:col-span-1 space-y-6">
+                
+                <div class="border-b pb-4">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Name</h2>
+                    <p class="text-lg text-gray-600">Banu</p>
+                </div>
+
+                <div class="border-b pb-4">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Email</h2>
+                    <p class="text-lg text-gray-600">banuraj2402@gmail.com</p>
+                </div>
+
+                <div class="border-b pb-4">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">Profile</h2>
+                    <p class="text-lg text-gray-600">Computer Teacher, Trinity School</p>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg shadow-inner">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">About me</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        I am a dedicated Computer Teacher at Trinity School, passionately committed to inspiring students in the world of coding and technology. I consistently strive to strengthen my expertise, learn new methodologies, and develop my career to deliver the highest quality education.
+                    </p>
+                </div>
+            </section>
+
+            <section class="md:col-span-2 space-y-8">
+                <h2 class="text-3xl font-extrabold text-primary border-b-4 border-secondary pb-2">Skills</h2>
+
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <i data-lucide="gamepad" class="w-6 h-6 text-secondary"></i>
+                        <div class="flex-grow">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold text-gray-700">Scratch (Visual Programming)</span>
+                                <span class="text-sm font-medium text-primary">90%</span>
+                            </div>
+                            <div class="skill-bar-bg h-2 rounded-full">
+                                <div class="bg-primary h-2 rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <i data-lucide="code" class="w-6 h-6 text-secondary"></i>
+                        <div class="flex-grow">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold text-gray-700">Python (Introductory Coding)</span>
+                                <span class="text-sm font-medium text-primary">85%</span>
+                            </div>
+                            <div class="skill-bar-bg h-2 rounded-full">
+                                <div class="bg-primary h-2 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <i data-lucide="cpu" class="w-6 h-6 text-secondary"></i>
+                        <div class="flex-grow">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold text-gray-700">MakeCode (Microbit/Minecraft)</span>
+                                <span class="text-sm font-medium text-primary">75%</span>
+                            </div>
+                            <div class="skill-bar-bg h-2 rounded-full">
+                                <div class="bg-primary h-2 rounded-full" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <i data-lucide="zap" class="w-6 h-6 text-secondary"></i>
+                        <div class="flex-grow">
+                            <div class="flex justify-between mb-1">
+                                <span class="font-semibold text-gray-700">JavaScript (Basic Concepts)</span>
+                                <span class="text-sm font-medium text-primary">60%</span>
+                            </div>
+                            <div class="skill-bar-bg h-2 rounded-full">
+                                <div class="bg-primary h-2 rounded-full" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-700 mb-3">Tools & Methodologies</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 border border-gray-300">
+                            <i data-lucide="git-branch" class="w-4 h-4 mr-2"></i> Version Control (Git)
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary text-white border border-secondary">
+                            <i data-lucide="book-open" class="w-4 h-4 mr-2"></i> Curriculum Design
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 border border-blue-300">
+                            <i data-lucide="users" class="w-4 h-4 mr-2"></i> Classroom Management
+                        </span>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800 border border-red-300">
+                            <i data-lucide="check-circle" class="w-4 h-4 mr-2"></i> Student Assessment
+                        </span>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        
+</body>
+</html>
